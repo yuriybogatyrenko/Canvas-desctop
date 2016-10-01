@@ -1,0 +1,61 @@
+/*
+Error: Function sprite_map doesn't support keyword arguments
+        on line 263 of sass/mixins.sass
+
+258: // +arr(500,50, #000, l)
+259: // +arr(500,50, #000, bl)
+260: 
+261: 
+262: 
+263: $icons: sprite-map("icons/*.png", $position: 0, $spacing: 5px, $repeat: no-repeat)
+264: $icons-2x: sprite-map("icons-2x/*.png", $position: 0, $spacing: 10px, $repeat: no-repeat)
+265:  
+266:  
+267: =sprite($sprite, $pos: "static", $type: "all") 
+268: 	@if $type != "retina"
+
+Backtrace:
+sass/mixins.sass:263
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:198:in `construct_ruby_args'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:135:in `_perform'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:471:in `visit_variable'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+C:/Ruby/bin/sass:23:in `load'
+C:/Ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Function sprite_map doesn't support keyword arguments\A         on line 263 of sass/mixins.sass\A \A 258: // +arr(500,50, #000, l)\A 259: // +arr(500,50, #000, bl)\A 260: \A 261: \A 262: \A 263: $icons: sprite-map(\"icons/*.png\", $position: 0, $spacing: 5px, $repeat: no-repeat)\A 264: $icons-2x: sprite-map(\"icons-2x/*.png\", $position: 0, $spacing: 10px, $repeat: no-repeat)\A 265:  \A 266:  \A 267: =sprite($sprite, $pos: \"static\", $type: \"all\") \A 268: 	@if $type != \"retina\""; }
